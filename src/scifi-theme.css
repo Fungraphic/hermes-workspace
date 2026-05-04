@@ -180,19 +180,54 @@
 /* Amber is used for warning/alert tones (usage meter, badges, etc.).
    In SciFi dark, pale yellow breaks the cyberpunk aesthetic and creates
    unreadable combos (light text on pale bg). Remap all amber tokens to
-   cyan/teal variants that fit the theme. */
+   cyan/teal variants that fit the theme.
+   bg-amber-100 must stay visible on --theme-panel (#0d1b2a) so we use
+   a brighter teal. text-amber-600/800 need contrast on that bg. */
 [data-theme='scifi'] {
-  --color-amber-50: #041418;
-  --color-amber-100: #0a2633;
-  --color-amber-200: #0f3a4d;
-  --color-amber-300: #145366;
-  --color-amber-400: #1a7599;
-  --color-amber-500: #00b8d4;
+  --color-amber-50: #071e2b;
+  --color-amber-100: #0f3547;
+  --color-amber-200: #164d66;
+  --color-amber-300: #1e6e8a;
+  --color-amber-400: #2690b3;
+  --color-amber-500: #00bcd4;
   --color-amber-600: #00d4e8;
-  --color-amber-700: #33dff0;
-  --color-amber-800: #80f0ff;
-  --color-amber-900: #b3f7ff;
-  --color-amber-950: #ccfaff;
+  --color-amber-700: #33e0f2;
+  --color-amber-800: #ccf7ff;
+  --color-amber-900: #e0fbff;
+  --color-amber-950: #ebfcff;
+}
+
+/* ── SciFi dark: red → crimson remap ──────────────────────────────── */
+/* Red tones for danger/error states. Keep them red but darker to fit
+   the dark HUD aesthetic. bg-red-100 must be visible on --theme-panel. */
+[data-theme='scifi'] {
+  --color-red-50: #1a0a0a;
+  --color-red-100: #3d1111;
+  --color-red-200: #5c1a1a;
+  --color-red-300: #8a2525;
+  --color-red-400: #b83030;
+  --color-red-500: #ef4444;
+  --color-red-600: #f87171;
+  --color-red-700: #fca5a5;
+  --color-red-800: #fee2e2;
+  --color-red-900: #fef2f2;
+  --color-red-950: #fff5f5;
+}
+
+/* ── SciFi dark: emerald → neon-green remap ─────────────────────── */
+/* Emerald/green for success states. Fit the cyberpunk palette. */
+[data-theme='scifi'] {
+  --color-emerald-50: #0a1a14;
+  --color-emerald-100: #0f3326;
+  --color-emerald-200: #15523a;
+  --color-emerald-300: #1c7a52;
+  --color-emerald-400: #23a86b;
+  --color-emerald-500: #64ffda;
+  --color-emerald-600: #7cffd8;
+  --color-emerald-700: #a3ffe0;
+  --color-emerald-800: #ccfff0;
+  --color-emerald-900: #e0fff6;
+  --color-emerald-950: #ebfff8;
 }
 
 /* ── SciFi light: amber → teal remap ──────────────────────────────── */
