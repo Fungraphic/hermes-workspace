@@ -6,6 +6,7 @@
 
 /* ── SciFi Dark ─────────────────────────────────────────────────────── */
 [data-theme='scifi'] {
+
   --theme-bg: #060b18;
   --theme-sidebar: #0a1628;
   --theme-panel: #0d1b2a;
@@ -346,22 +347,3 @@
   --color-neutral-950: #0a1628 !important;
 }
 
-/* ── SciFi dark: override bg-white in dialogs/modals ─────────────── */
-/* bg-white and bg-white/N are used extensively in usage-details-modal
-   and other dialog components. In SciFi dark mode, white backgrounds
-   would break the aesthetic completely. Override them to use theme-card
-   or theme-panel instead. */
-[data-theme='scifi'] .bg-white {
-  background-color: var(--theme-card) !important;
-}
-[data-theme='scifi'] .bg-white\/60,
-[data-theme='scifi'] .bg-white\/70 {
-  background-color: color-mix(in srgb, var(--theme-card) 70%, transparent) !important;
-}
-
-/* ── SciFi dark: tab active bg-white in dialogs ──────────────────────── */
-/* The tab pills in usage-details-modal use 'bg-white' for the active tab. */
-[data-theme='scifi'] button.bg-white {
-  background-color: var(--theme-card2) !important;
-  color: var(--theme-text) !important;
-}
