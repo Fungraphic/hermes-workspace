@@ -302,7 +302,7 @@
    Target the specific tab container to avoid affecting other bg-primary-100
    elements like cards. */
 [data-theme='scifi'] [class*="border-b"] button.bg-primary-100,
-[data-theme='scifi'] [role="tablist"] button.bg-primary-100 {
+[data-theme='scifi'] button.bg-primary-100 {
   background-color: rgba(0, 240, 255, 0.15) !important;
   color: var(--theme-accent) !important;
   box-shadow: 0 0 8px rgba(0, 240, 255, 0.2) !important;
