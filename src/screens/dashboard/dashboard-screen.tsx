@@ -560,7 +560,7 @@ function QuickAction({
         {label}
       </span>
       {badge ? (
-        <span className="ml-auto shrink-0 rounded-full border border-amber-300 bg-amber-100 px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-[0.12em] text-amber-700">
+        <span className="ml-auto shrink-0 rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-[0.12em]" style={{ borderColor: 'color-mix(in srgb, var(--theme-warning, #d97706) 40%, transparent)', background: 'color-mix(in srgb, var(--theme-warning, #d97706) 10%, transparent)', color: 'var(--theme-warning, #92400e)' }}>
           {badge}
         </span>
       ) : null}

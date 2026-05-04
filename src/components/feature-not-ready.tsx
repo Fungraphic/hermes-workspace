@@ -44,9 +44,9 @@ export function FeatureNotReady({
         <div
           className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full"
           style={{
-            background: 'rgba(251,191,36,0.12)',
-            color: '#fbbf24',
-            border: '2px solid rgba(251,191,36,0.35)',
+            background: 'color-mix(in srgb, var(--theme-warning, rgba(251,191,36,0.12)) 100%, transparent)',
+            color: 'var(--theme-warning, #fbbf24)',
+            border: '2px solid color-mix(in srgb, var(--theme-warning, rgba(251,191,36,0.35)) 100%, transparent)',
           }}
         >
           <HugeiconsIcon icon={Alert02Icon} size={26} strokeWidth={1.6} />

@@ -7,11 +7,11 @@ import type {
 } from '@/server/dashboard-aggregator'
 
 const TIER_COLORS: Record<string, string> = {
-  Copper: '#b45309',
-  Silver: '#9ca3af',
-  Gold: '#facc15',
-  Diamond: '#22d3ee',
-  Olympian: '#f472b6',
+  Copper: 'var(--theme-warning, #b45309)',
+  Silver: 'var(--theme-muted, #9ca3af)',
+  Gold: 'var(--theme-warning, #facc15)',
+  Diamond: 'var(--theme-accent-secondary, #22d3ee)',
+  Olympian: 'var(--theme-danger, #f472b6)',
 }
 
 function tierColor(tier: string | null): string {
@@ -139,7 +139,7 @@ export function AchievementsCard({
           className="pointer-events-none absolute inset-x-0 top-0 h-[2px]"
           style={{
             background:
-              'linear-gradient(90deg, #facc15, color-mix(in srgb, #facc15 40%, transparent), transparent)',
+              'linear-gradient(90deg, var(--theme-warning, #facc15), color-mix(in srgb, var(--theme-warning, #facc15) 40%, transparent), transparent)',
           }}
         />
         <div className="mb-2 flex items-center justify-between">

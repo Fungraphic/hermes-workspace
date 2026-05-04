@@ -175,3 +175,116 @@
 [data-theme='scifi'] button:hover {
   text-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
 }
+
+/* ── SciFi: replace Tailwind amber/yellow with theme-consistent tones ─ */
+/* No pale yellow/cream in a cyberpunk HUD — use orange (warning) or cyan */
+[data-theme='scifi'] .bg-amber-100,
+[data-theme='scifi'] .bg-amber-50    { background-color: rgba(255, 107, 53, 0.1) !important; }
+[data-theme='scifi'] .bg-amber-300,
+[data-theme='scifi'] .bg-amber-400    { background-color: #ff6b35 !important; }
+[data-theme='scifi'] .bg-amber-500    { background-color: #e45a1f !important; }
+[data-theme='scifi'] .bg-amber-500\/10,
+[data-theme='scifi'] .bg-amber-500\/15 { background-color: rgba(255, 107, 53, 0.1) !important; }
+[data-theme='scifi'] .bg-amber-600\/40 { background-color: rgba(255, 107, 53, 0.15) !important; }
+[data-theme='scifi'] .bg-amber-700\/40,
+[data-theme='scifi'] .bg-amber-700\/50 { background-color: rgba(255, 107, 53, 0.12) !important; }
+[data-theme='scifi'] .bg-amber-800\/60 { background-color: rgba(255, 107, 53, 0.1) !important; }
+[data-theme='scifi'] .bg-yellow-400    { background-color: #ff6b35 !important; }
+[data-theme='scifi'] .bg-yellow-400\/30 { background-color: rgba(255, 107, 53, 0.15) !important; }
+[data-theme='scifi'] .bg-yellow-500    { background-color: #e45a1f !important; }
+
+[data-theme='scifi'] .text-amber-100  { color: #ff9060 !important; }
+[data-theme='scifi'] .text-amber-200  { color: #ffa878 !important; }
+[data-theme='scifi'] .text-amber-300  { color: #ff6b35 !important; }
+[data-theme='scifi'] .text-amber-300\/80 { color: rgba(255, 107, 53, 0.8) !important; }
+[data-theme='scifi'] .text-amber-400,
+[data-theme='scifi'] .text-amber-500  { color: #ff6b35 !important; }
+[data-theme='scifi'] .text-amber-600,
+[data-theme='scifi'] .text-amber-700  { color: #cc5500 !important; }
+[data-theme='scifi'] .text-amber-50   { color: #ffb088 !important; }
+[data-theme='scifi'] .text-yellow-400 { color: #ff6b35 !important; }
+[data-theme='scifi'] .text-yellow-500 { color: #ff6b35 !important; }
+[data-theme='scifi'] .text-yellow-600 { color: #cc5500 !important; }
+[data-theme='scifi'] .text-yellow-200 { color: #ffa070 !important; }
+
+[data-theme='scifi'] .border-amber-100 { border-color: rgba(255, 107, 53, 0.15) !important; }
+[data-theme='scifi'] .border-amber-200 { border-color: rgba(255, 107, 53, 0.2) !important; }
+[data-theme='scifi'] .border-amber-300  { border-color: rgba(255, 107, 53, 0.3) !important; }
+[data-theme='scifi'] .border-amber-300\/22,
+[data-theme='scifi'] .border-amber-300\/35,
+[data-theme='scifi'] .border-amber-300\/45,
+[data-theme='scifi'] .border-amber-300\/65 { border-color: rgba(255, 107, 53, 0.3) !important; }
+[data-theme='scifi'] .border-amber-400,
+[data-theme='scifi'] .border-amber-400\/25,
+[data-theme='scifi'] .border-amber-400\/28,
+[data-theme='scifi'] .border-amber-400\/30,
+[data-theme='scifi'] .border-amber-400\/40,
+[data-theme='scifi'] .border-amber-400\/50 { border-color: rgba(255, 107, 53, 0.35) !important; }
+[data-theme='scifi'] .border-yellow-500\/30 { border-color: rgba(255, 107, 53, 0.25) !important; }
+[data-theme='scifi'] .border-yellow-400\/50 { border-color: rgba(255, 107, 53, 0.35) !important; }
+
+/* ring overrides */
+[data-theme='scifi'] .ring-amber-200\/20 { --tw-ring-color: rgba(255, 107, 53, 0.15) !important; }
+
+/* shadow with amber — replace with cyan/orange glow */
+[data-theme='scifi'] .shadow-\[0_0_8px_rgba\(234\,179\,8\,0\.15\)\] {
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.15) !important;
+}
+[data-theme='scifi'] .shadow-\[0_0_0_1px_rgba\(251\,191\,36\,0\.16\)\] {
+  box-shadow: 0 0 0 1px rgba(0, 240, 255, 0.12) !important;
+}
+
+/* ── SciFi Light: same amber/yellow overrides for light mode ────────── */
+[data-theme='scifi-light'] .bg-amber-100,
+[data-theme='scifi-light'] .bg-amber-50    { background-color: rgba(0, 151, 167, 0.08) !important; }
+[data-theme='scifi-light'] .bg-amber-300,
+[data-theme='scifi-light'] .bg-amber-400    { background-color: #0097a7 !important; }
+[data-theme='scifi-light'] .bg-amber-500    { background-color: #00838f !important; }
+[data-theme='scifi-light'] .bg-amber-500\/10,
+[data-theme='scifi-light'] .bg-amber-500\/15 { background-color: rgba(0, 151, 167, 0.1) !important; }
+[data-theme='scifi-light'] .bg-amber-600\/40 { background-color: rgba(0, 151, 167, 0.12) !important; }
+[data-theme='scifi-light'] .bg-amber-700\/40,
+[data-theme='scifi-light'] .bg-amber-700\/50 { background-color: rgba(0, 151, 167, 0.1) !important; }
+[data-theme='scifi-light'] .bg-amber-800\/60 { background-color: rgba(0, 151, 167, 0.08) !important; }
+[data-theme='scifi-light'] .bg-yellow-400    { background-color: #0097a7 !important; }
+[data-theme='scifi-light'] .bg-yellow-400\/30 { background-color: rgba(0, 151, 167, 0.12) !important; }
+[data-theme='scifi-light'] .bg-yellow-500    { background-color: #00838f !important; }
+
+[data-theme='scifi-light'] .text-amber-100  { color: #00697a !important; }
+[data-theme='scifi-light'] .text-amber-200  { color: #007a8a !important; }
+[data-theme='scifi-light'] .text-amber-300  { color: #0097a7 !important; }
+[data-theme='scifi-light'] .text-amber-300\/80 { color: rgba(0, 151, 167, 0.8) !important; }
+[data-theme='scifi-light'] .text-amber-400,
+[data-theme='scifi-light'] .text-amber-500  { color: #0097a7 !important; }
+[data-theme='scifi-light'] .text-amber-600,
+[data-theme='scifi-light'] .text-amber-700  { color: #005a67 !important; }
+[data-theme='scifi-light'] .text-amber-50   { color: #00838f !important; }
+[data-theme='scifi-light'] .text-yellow-400 { color: #0097a7 !important; }
+[data-theme='scifi-light'] .text-yellow-500 { color: #0097a7 !important; }
+[data-theme='scifi-light'] .text-yellow-600 { color: #005a67 !important; }
+[data-theme='scifi-light'] .text-yellow-200 { color: #007a8a !important; }
+
+[data-theme='scifi-light'] .border-amber-100 { border-color: rgba(0, 151, 167, 0.12) !important; }
+[data-theme='scifi-light'] .border-amber-200 { border-color: rgba(0, 151, 167, 0.18) !important; }
+[data-theme='scifi-light'] .border-amber-300  { border-color: rgba(0, 151, 167, 0.25) !important; }
+[data-theme='scifi-light'] .border-amber-300\/22,
+[data-theme='scifi-light'] .border-amber-300\/35,
+[data-theme='scifi-light'] .border-amber-300\/45,
+[data-theme='scifi-light'] .border-amber-300\/65 { border-color: rgba(0, 151, 167, 0.25) !important; }
+[data-theme='scifi-light'] .border-amber-400,
+[data-theme='scifi-light'] .border-amber-400\/25,
+[data-theme='scifi-light'] .border-amber-400\/28,
+[data-theme='scifi-light'] .border-amber-400\/30,
+[data-theme='scifi-light'] .border-amber-400\/40,
+[data-theme='scifi-light'] .border-amber-400\/50 { border-color: rgba(0, 151, 167, 0.3) !important; }
+[data-theme='scifi-light'] .border-yellow-500\/30 { border-color: rgba(0, 151, 167, 0.2) !important; }
+[data-theme='scifi-light'] .border-yellow-400\/50 { border-color: rgba(0, 151, 167, 0.3) !important; }
+
+[data-theme='scifi-light'] .ring-amber-200\/20 { --tw-ring-color: rgba(0, 151, 167, 0.12) !important; }
+
+[data-theme='scifi-light'] .shadow-\[0_0_8px_rgba\(234\,179\,8\,0\.15\)\] {
+  box-shadow: 0 0 8px rgba(0, 151, 167, 0.12) !important;
+}
+[data-theme='scifi-light'] .shadow-\[0_0_0_1px_rgba\(251\,191\,36\,0\.16\)\] {
+  box-shadow: 0 0 0 1px rgba(0, 151, 167, 0.1) !important;
+}

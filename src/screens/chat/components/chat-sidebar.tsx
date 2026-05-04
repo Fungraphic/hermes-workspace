@@ -225,9 +225,9 @@ function NavItem({
               style={
                 item.badge === 'NEW'
                   ? {
-                      background: 'linear-gradient(180deg, #fde68a 0%, #fbbf24 50%, #d4a017 100%)',
-                      color: '#0b1320',
-                      boxShadow: '0 0 8px rgba(250,204,21,0.4)',
+                      background: 'linear-gradient(180deg, color-mix(in srgb, var(--theme-warning, #fde68a) 70%, white) 0%, var(--theme-warning, #fbbf24) 50%, color-mix(in srgb, var(--theme-warning, #d4a017) 80%, black) 100%)',
+                      color: 'var(--theme-bg, #0b1320)',
+                      boxShadow: `0 0 8px color-mix(in srgb, var(--theme-warning, #facc15) 40%, transparent)`,
                       letterSpacing: '0.08em',
                     }
                   : undefined
@@ -1051,16 +1051,16 @@ function ChatSidebarComponent({
               size={20}
               strokeWidth={1.5}
               className="size-5 shrink-0"
-              style={{ color: '#facc15' }}
+              style={{ color: 'var(--theme-warning, #facc15)' }}
             />
             <span>HermesWorld</span>
             <span
               className="ml-auto inline-flex min-w-6 items-center justify-center rounded-full px-2 py-0.5 text-[10px] font-bold leading-none"
               style={{
                 background:
-                  'linear-gradient(180deg, #fde68a 0%, #fbbf24 50%, #d4a017 100%)',
-                color: '#0b1320',
-                boxShadow: '0 0 8px rgba(250,204,21,0.4)',
+                  'linear-gradient(180deg, color-mix(in srgb, var(--theme-warning, #fde68a) 70%, white) 0%, var(--theme-warning, #fbbf24) 50%, color-mix(in srgb, var(--theme-warning, #d4a017) 80%, black) 100%)',
+                color: 'var(--theme-bg, #0b1320)',
+                boxShadow: `0 0 8px color-mix(in srgb, var(--theme-warning, #facc15) 40%, transparent)`,
                 letterSpacing: '0.08em',
               }}
             >

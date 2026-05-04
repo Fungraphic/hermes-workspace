@@ -43,7 +43,7 @@ const FAMILY_TONES = [
   'var(--theme-danger)',
   '#a78bfa',
   '#22d3ee',
-  '#facc15',
+  'var(--theme-warning, #facc15)',
 ]
 
 function classify(modelId: string): { key: string; label: string } {
