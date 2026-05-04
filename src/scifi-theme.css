@@ -175,3 +175,39 @@
 [data-theme='scifi'] button:hover {
   text-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
 }
+
+/* ── SciFi dark: amber → cyan remap ────────────────────────────────── */
+/* Amber is used for warning/alert tones (usage meter, badges, etc.).
+   In SciFi dark, pale yellow breaks the cyberpunk aesthetic and creates
+   unreadable combos (light text on pale bg). Remap all amber tokens to
+   cyan/teal variants that fit the theme. */
+[data-theme='scifi'] {
+  --color-amber-50: #041418;
+  --color-amber-100: #0a2633;
+  --color-amber-200: #0f3a4d;
+  --color-amber-300: #145366;
+  --color-amber-400: #1a7599;
+  --color-amber-500: #00b8d4;
+  --color-amber-600: #00d4e8;
+  --color-amber-700: #33dff0;
+  --color-amber-800: #80f0ff;
+  --color-amber-900: #b3f7ff;
+  --color-amber-950: #ccfaff;
+}
+
+/* ── SciFi light: amber → teal remap ──────────────────────────────── */
+/* Same rationale: replace yellow/amber with teal to match the cold
+   steel + cyan accent palette of scifi-light. */
+[data-theme='scifi-light'] {
+  --color-amber-50: #e8f4f6 !important;
+  --color-amber-100: #d0e8ec !important;
+  --color-amber-200: #b0d8e0 !important;
+  --color-amber-300: #80c4d0 !important;
+  --color-amber-400: #4da8b8 !important;
+  --color-amber-500: #0097a7 !important;
+  --color-amber-600: #00838f !important;
+  --color-amber-700: #006974 !important;
+  --color-amber-800: #0a1628 !important;
+  --color-amber-900: #0a1628 !important;
+  --color-amber-950: #0a1628 !important;
+}
