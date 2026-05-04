@@ -230,6 +230,27 @@
   --color-emerald-950: #ebfff8;
 }
 
+/* ── SciFi dark: selected menu items — force bg/text on inline-styled MenuItem ─ */
+/* MenuItem sets color: var(--theme-text) and background via onMouseEnter/Leave
+   inline styles, which override Tailwind classes like bg-amber-100 text-amber-800.
+   In SciFi dark, selected items need a visible teal background with bright text. */
+[data-theme='scifi'] .bg-amber-100 {
+  background-color: var(--color-amber-100) !important;
+  color: var(--color-amber-800) !important;
+}
+[data-theme='scifi'] .bg-amber-100 .text-amber-800 {
+  color: var(--color-amber-800) !important;
+}
+[data-theme='scifi'] .bg-amber-100 .text-amber-600 {
+  color: var(--color-amber-600) !important;
+}
+[data-theme='scifi'] .bg-amber-100 .text-primary-600 {
+  color: var(--color-amber-600) !important;
+}
+[data-theme='scifi'] .bg-amber-100 .text-primary-300 {
+  color: var(--color-amber-700) !important;
+}
+
 /* ── SciFi light: amber → teal remap ──────────────────────────────── */
 /* Same rationale: replace yellow/amber with teal to match the cold
    steel + cyan accent palette of scifi-light. */
