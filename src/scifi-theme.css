@@ -299,10 +299,8 @@
 /* Tabs "Session / Providers" use bg-primary-100 for the active tab
    inside a bg-primary-50 container. In SciFi dark, primary-50 (#0d1b2a)
    and primary-100 (#112240) are too similar — the active tab is invisible.
-   Target the specific tab container to avoid affecting other bg-primary-100
-   elements like cards. */
-[data-theme='scifi'] [class*="border-b"] button.bg-primary-100,
-[data-theme='scifi'] button.bg-primary-100 {
+   Target .bg-primary-50 > button to scope to tab containers only. */
+[data-theme='scifi'] .bg-primary-50 > button.bg-primary-100 {
   background-color: rgba(0, 240, 255, 0.15) !important;
   color: var(--theme-accent) !important;
   box-shadow: 0 0 8px rgba(0, 240, 255, 0.2) !important;
@@ -389,8 +387,7 @@
 }
 
 /* ── SciFi light: active tab indicator ──────────────────────────── */
-[data-theme='scifi-light'] [class*="border-b"] button.bg-primary-100,
-[data-theme='scifi-light'] [role="tablist"] button.bg-primary-100 {
+[data-theme='scifi-light'] .bg-primary-50 > button.bg-primary-100 {
   background-color: rgba(0, 151, 167, 0.15) !important;
   color: var(--theme-accent) !important;
   box-shadow: 0 0 6px rgba(0, 151, 167, 0.2) !important;
