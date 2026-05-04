@@ -253,17 +253,17 @@
    Remap to dark navy/slate tones that blend with the HUD.
    !important required because Tailwind v4 defines these as oklch in @layer theme. */
 [data-theme='scifi'] {
-  --color-neutral-50: #0a1628 !important;
-  --color-neutral-100: #112240 !important;
-  --color-neutral-200: #1a3a5c !important;
-  --color-neutral-300: #2a5a7c !important;
-  --color-neutral-400: #5d9bb8 !important;
-  --color-neutral-500: #7ab4cc !important;
-  --color-neutral-600: #99c8db !important;
-  --color-neutral-700: #b3d7e6 !important;
-  --color-neutral-800: #cce5ef !important;
-  --color-neutral-900: #e0f0f6 !important;
-  --color-neutral-950: #ebf5f9 !important;
+  --color-neutral-50: #e8f4f8 !important;
+  --color-neutral-100: #d0e8ef !important;
+  --color-neutral-200: #a8cdd9 !important;
+  --color-neutral-300: #7ab4cc !important;
+  --color-neutral-400: #4d94b3 !important;
+  --color-neutral-500: #2a6d8a !important;
+  --color-neutral-600: #1e5a73 !important;
+  --color-neutral-700: #16475c !important;
+  --color-neutral-800: #0f3547 !important;
+  --color-neutral-900: #0a2035 !important;
+  --color-neutral-950: #060e18 !important;
   /* ── white → dark background in SciFi dark ── */
   /* Components like chat-controls popover use bg-white / dark:bg-neutral-900.
      In SciFi dark, white must become the panel background color. */
@@ -289,6 +289,18 @@
 }
 [data-theme='scifi'] .bg-amber-100 .text-primary-300 {
   color: var(--color-amber-700) !important;
+}
+
+/* ── SciFi dark: active tab indicator ─────────────────────────── */
+/* Tabs like "Session / Providers" use bg-primary-100 for the active tab
+   inside a bg-primary-50 container. In SciFi dark, primary-50 (#0d1b2a) and
+   primary-100 (#112240) are too similar — the active tab is invisible.
+   Use a bright cyan accent background and glow to clearly mark the active tab. */
+[data-theme='scifi'] button.bg-primary-100 {
+  background-color: rgba(0, 240, 255, 0.15) !important;
+  color: var(--theme-accent) !important;
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.2) !important;
+  text-shadow: 0 0 6px rgba(0, 240, 255, 0.3);
 }
 
 /* ── SciFi light: amber → teal remap ──────────────────────────────── */
